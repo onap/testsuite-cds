@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "311225ac_98d7fefa",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 5047
+      },
+      "writtenOn": "2020-08-26T15:05:58Z",
+      "side": 1,
+      "message": "You can safely drop the query string",
+      "range": {
+        "startLine": 101,
+        "startChar": 61,
+        "endLine": 101,
+        "endChar": 112
+      },
+      "revId": "840e69b3d947660a668b37423336901b30da1f42",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
