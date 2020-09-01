@@ -1,0 +1,10 @@
+Code-Review+2: Paweł Wieczorek <p.wieczorek2@samsung.com>
+Code-Review+2: Morgan Richomme <morgan.richomme@orange.com>
+Code-Review+2: Bartek Grzybowski <b.grzybowski@partner.samsung.com>
+Verified+1: Paweł Wieczorek <p.wieczorek2@samsung.com>
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Submitted-by: Bartek Grzybowski <b.grzybowski@partner.samsung.com>
+Submitted-at: Tue, 01 Sep 2020 06:43:03 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/testsuite/cds/+/111643
+Project: testsuite/cds
+Branch: refs/heads/master
