@@ -1,0 +1,28 @@
+{
+    "commonHeader": {
+        "timestamp": "2020-05-01T18:55:44.034Z",
+        "originatorId": "System",
+        "requestId": "remote-ansible-failure",
+        "subRequestId": "remote-ansible-failure-1",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-remote-ansible",
+        "blueprintVersion": "1.0.0",
+        "actionName": "execute-remote-ansible-failure",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 500,
+        "eventType": "EVENT_COMPONENT_FAILURE",
+        "timestamp": "2020-05-01T18:55:44.046Z",
+        "errorMessage": "error : ansible-command-logs : Failed to process on remote executor (mapper.readTree(response.body) must not be null)",
+        "message": "failure"
+    },
+    "payload": {
+        "execute-remote-ansible-failure-response": {
+            "ansible-command-status": "error",
+            "ansible-command-logs": "Failed to process on remote executor (mapper.readTree(response.body) must not be null)"
+        }
+    }
+}

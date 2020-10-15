@@ -1,0 +1,19 @@
+{
+	"actionIdentifiers": {
+        "mode": "sync",
+        "blueprintName": "RT-netconf",
+        "blueprintVersion": "1.0.0",
+        "actionName": "netconf-kotlin"
+    },
+    "payload": {
+        "netconf-kotlin-request": {
+        	"netconf-host": "odl-netconf-testtool",
+        	"netconf-timeout": 30
+        }
+    },
+    "commonHeader": {
+        "subRequestId": "1",
+        "requestId": "regression-test-netconf-kotlin",
+        "originatorId": "System"
+    }
+}

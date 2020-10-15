@@ -1,0 +1,8 @@
+TOSCA-Meta-File-Version: 1.0.0
+CSAR-Version: 1.0
+Created-By: Selffish
+Entry-Definitions: Definitions/resource-resolution.json
+Template-Tags: test, regression
+Template-Name: RT-resource-resolution
+Template-Version: 1.0.0
+Template-Type: DEFAULT

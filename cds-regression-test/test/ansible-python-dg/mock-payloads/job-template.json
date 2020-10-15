@@ -1,0 +1,224 @@
+{
+  "httpRequest" : {
+    "method" : "GET",
+    "path" : "/ansible-python-dg/success/api/v2/job_templates/hello_world_job_template/"
+  },
+  "httpResponse" : {
+    "body" : {
+      "id": "123",
+      "type": "job_template",
+      "url": "/api/v2/job_templates/123/",
+      "related": {
+        "named_url": "/api/v2/job_templates/hello_world_job_template/",
+        "created_by": "/api/v2/users/1/",
+        "modified_by": "/api/v2/users/1/",
+        "labels": "/api/v2/job_templates/123/labels/",
+        "inventory": "/api/v2/inventories/1/",
+        "project": "/api/v2/projects/8/",
+        "extra_credentials": "/api/v2/job_templates/123/extra_credentials/",
+        "credentials": "/api/v2/job_templates/123/credentials/",
+        "last_job": "/api/v2/jobs/222/",
+        "jobs": "/api/v2/job_templates/123/jobs/",
+        "schedules": "/api/v2/job_templates/123/schedules/",
+        "activity_stream": "/api/v2/job_templates/123/activity_stream/",
+        "launch": "/api/v2/job_templates/123/launch/",
+        "notification_templates_any": "/api/v2/job_templates/123/notification_templates_any/",
+        "notification_templates_success": "/api/v2/job_templates/123/notification_templates_success/",
+        "notification_templates_error": "/api/v2/job_templates/123/notification_templates_error/",
+        "access_list": "/api/v2/job_templates/123/access_list/",
+        "survey_spec": "/api/v2/job_templates/123/survey_spec/",
+        "object_roles": "/api/v2/job_templates/123/object_roles/",
+        "instance_groups": "/api/v2/job_templates/123/instance_groups/",
+        "slice_workflow_jobs": "/api/v2/job_templates/123/slice_workflow_jobs/",
+        "copy": "/api/v2/job_templates/123/copy/"
+      },
+      "summary_fields": {
+        "inventory": {
+          "id": 1,
+          "name": "Demo Inventory",
+          "description": "",
+          "has_active_failures": false,
+          "total_hosts": 1,
+          "hosts_with_active_failures": 0,
+          "total_groups": 0,
+          "groups_with_active_failures": 0,
+          "has_inventory_sources": false,
+          "total_inventory_sources": 0,
+          "inventory_sources_with_failures": 0,
+          "organization_id": 1,
+          "kind": ""
+        },
+        "project": {
+          "id": 8,
+          "name": "cds_playbooks",
+          "description": "CDS - cds_playbooks Project",
+          "status": "ok",
+          "scm_type": ""
+        },
+        "last_job": {
+          "id": 222,
+          "name": "hello_world_job_template",
+          "description": "hello_world Runner Job Template",
+          "finished": "2019-06-12T11:20:27.892787Z",
+          "status": "successful",
+          "failed": false
+        },
+        "last_update": {
+          "id": 222,
+          "name": "hello_world_job_template",
+          "description": "hello_world Runner Job Template",
+          "status": "successful",
+          "failed": false
+        },
+        "created_by": {
+          "id": 1,
+          "username": "admin",
+          "first_name": "",
+          "last_name": ""
+        },
+        "modified_by": {
+          "id": 1,
+          "username": "admin",
+          "first_name": "",
+          "last_name": ""
+        },
+        "object_roles": {
+          "admin_role": {
+            "description": "Can manage all aspects of the job template",
+            "name": "Admin",
+            "id": 51
+          },
+          "execute_role": {
+            "description": "May run the job template",
+            "name": "Execute",
+            "id": 52
+          },
+          "read_role": {
+            "description": "May view settings for the job template",
+            "name": "Read",
+            "id": 53
+          }
+        },
+        "user_capabilities": {
+          "edit": true,
+          "delete": true,
+          "start": true,
+          "schedule": true,
+          "copy": true
+        },
+        "labels": {
+          "count": 0,
+          "results": []
+        },
+        "survey": {
+          "title": "",
+          "description": ""
+        },
+        "recent_jobs": [
+          {
+            "id": 222,
+            "status": "successful",
+            "finished": "2019-06-12T11:20:27.892787Z",
+            "type": "job"
+          },
+          {
+            "id": 65,
+            "status": "successful",
+            "finished": "2019-06-03T18:27:19.114796Z",
+            "type": "job"
+          },
+          {
+            "id": 64,
+            "status": "successful",
+            "finished": "2019-06-03T18:26:53.606618Z",
+            "type": "job"
+          },
+          {
+            "id": 63,
+            "status": "successful",
+            "finished": "2019-06-03T18:24:36.072943Z",
+            "type": "job"
+          },
+          {
+            "id": 62,
+            "status": "successful",
+            "finished": "2019-06-03T18:17:50.616528Z",
+            "type": "job"
+          },
+          {
+            "id": 61,
+            "status": "successful",
+            "finished": "2019-06-03T18:04:42.995611Z",
+            "type": "job"
+          },
+          {
+            "id": 60,
+            "status": "successful",
+            "finished": "2019-06-03T17:47:13.983951Z",
+            "type": "job"
+          },
+          {
+            "id": 50,
+            "status": "successful",
+            "finished": "2019-05-30T15:47:55.700161Z",
+            "type": "job"
+          },
+          {
+            "id": 49,
+            "status": "successful",
+            "finished": "2019-05-29T14:46:51.615926Z",
+            "type": "job"
+          },
+          {
+            "id": 47,
+            "status": "successful",
+            "finished": "2019-05-27T20:23:58.656709Z",
+            "type": "job"
+          }
+        ],
+        "extra_credentials": [],
+        "credentials": []
+      },
+      "created": "2019-05-21T19:28:05.953730Z",
+      "modified": "2019-05-21T20:06:55.728697Z",
+      "name": "hello_world_job_template",
+      "description": "hello_world Runner Job Template",
+      "job_type": "run",
+      "inventory": 1,
+      "project": 8,
+      "playbook": "hello_world.yml",
+      "forks": 0,
+      "limit": "",
+      "verbosity": 0,
+      "extra_vars": "",
+      "job_tags": "",
+      "force_handlers": false,
+      "skip_tags": "",
+      "start_at_task": "",
+      "timeout": 0,
+      "use_fact_cache": false,
+      "last_job_run": "2019-06-12T11:20:27.892787Z",
+      "last_job_failed": false,
+      "next_job_run": null,
+      "status": "successful",
+      "host_config_key": "",
+      "ask_diff_mode_on_launch": false,
+      "ask_variables_on_launch": true,
+      "ask_limit_on_launch": true,
+      "ask_tags_on_launch": true,
+      "ask_skip_tags_on_launch": true,
+      "ask_job_type_on_launch": false,
+      "ask_verbosity_on_launch": false,
+      "ask_inventory_on_launch": true,
+      "ask_credential_on_launch": true,
+      "survey_enabled": true,
+      "become_enabled": false,
+      "diff_mode": false,
+      "allow_simultaneous": false,
+      "custom_virtualenv": null,
+      "job_slice_count": 1,
+      "credential": null,
+      "vault_credential": null
+    }
+  }
+}

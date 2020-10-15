@@ -1,0 +1,32 @@
+{
+  "commonHeader": {
+    "timestamp": "2020-05-26T13:47:27.143Z",
+    "originatorId": "System",
+    "requestId": "123456",
+    "subRequestId": "1234-12234",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-py-executor",
+    "blueprintVersion": "1.0.0",
+    "actionName": "remote-python",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 200,
+    "eventType": "EVENT_COMPONENT_EXECUTED",
+    "timestamp": "2020-05-26T13:47:27.193Z",
+    "errorMessage": null,
+    "message": "success"
+  },
+  "payload": {
+    "remote-python-response": {
+      "status": "success",
+      "response-data": {
+        "HelloWorld-request": {
+          "hello": "world"
+        }
+      }
+    }
+  }
+}

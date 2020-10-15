@@ -1,0 +1,32 @@
+{
+  "name": "RT-rest-get",
+  "data_type": "string",
+  "description": "Rest GET request for regression test",
+  "tags": "RT-rest-get",
+  "updatedBy": "Selfish",
+  "definition": {
+	  "name" : "RT-rest-get",
+	  "tags" : "RT-rest-get",
+	  "updated-by" : "Selffish",
+	  "property" : {
+	    "description" : "Rest GET request for regression test",
+	    "type" : "string"
+	  },
+	  "sources" : {
+	    "sdnc" : {
+	      "type": "source-rest",
+	      "properties": {
+	        "type": "string",
+	        "verb": "GET",
+	        "url-path": "/get",
+	        "endpoint-selector": "rest-endpoint",
+	        "path": "",
+	        "input-key-mapping": {},
+	        "output-key-mapping": {
+	          "value": "value"
+	        }
+	      }
+	    }
+	  }
+  }
+}

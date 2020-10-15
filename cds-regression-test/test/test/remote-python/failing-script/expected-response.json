@@ -1,0 +1,33 @@
+{
+    "correlationUUID": "0ae1f48a-ec91-4573-af76-070ec42e2cdd",
+    "commonHeader": {
+        "timestamp": "2020-07-02T23:46:04.959Z",
+        "originatorId": "System",
+        "requestId": "remote-python-failing-script",
+        "subRequestId": "1",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-remote-python",
+        "blueprintVersion": "1.0.0",
+        "actionName": "failing-remote-python",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 500,
+        "eventType": "EVENT_COMPONENT_FAILURE",
+        "timestamp": "2020-07-02T23:46:22.167Z",
+        "errorMessage": "FAILURE : execute-command : [\"Intentionally raised exception!\"]",
+        "message": "failure"
+    },
+    "payload": {
+        "failing-remote-python-response": {
+            "execute-command-payload": {
+                "errorMessage": "Intentionally raised exception!"
+            },
+            "execute-command-logs": [
+                "Intentionally raised exception!"
+            ]
+        }
+    }
+}
