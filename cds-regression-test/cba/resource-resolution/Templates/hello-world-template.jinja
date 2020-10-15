@@ -1,0 +1,19 @@
+{
+  "default": "{{ j_default }}",
+  "input": "{{ j_input }}",
+  "script": {
+    "python": "{{ j_python }}",
+    "kotlin": {
+      "base": "{{ j_kotlin }}"
+      "from suspend function": "{{ from_suspend_function }}"
+    }
+  },
+  "db": "{{ j_db[0].value }}",
+  "rest": {
+    "GET": "{{j_get}}",
+    "POST": "{{j_post}}",
+    "PUT": "{{j_put}}",
+    "PATCH": "{{j_patch}}",
+    "DELETE": "{{j_del}}"
+  }
+}
