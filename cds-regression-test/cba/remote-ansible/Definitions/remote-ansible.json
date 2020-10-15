@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "template_author": "Selffish",
+    "author-email": "test@bell.ca",
+    "template_name": "RT-remote-ansible",
+    "template_version": "1.0.0",
+    "template_tags": "Bell, CBA, test"
+  },
+  "dsl_definitions": {
+      "ansible-remote-success-endpoint": {
+        "type": "token-auth",
+        "url": "http://cds-regression-mockserver/remote-ansible/success",
+        "token": "Bearer J9gEtMDqf7P4YsJ7444fioY9VAhLDIs1"
+      },
+      "ansible-remote-failure-endpoint": {
+        "type": "token-auth",
+        "url": "http://cds-regression-mockserver/remote-ansible/failure",
+        "token": "Bearer J9gEtMDqf7P4YsJ7444fioY9VAhLDIs1"
+      },
+      "ansible-remote-invalid-endpoint": {
+        "type": "token-auth",
+        "url": "http://localhost:12345",
+        "token": "Bearer J9gEtMDqf7P4YsJ7444fioY9VAhLDIs1"
+      }
+    },
+    "topology_template": {
+      "workflows": {
+        "execute-remote-ansible-success": {
+          "steps": {
+            "process": {
+              "description": "Execute Remote Ansible Script",
+              "target": "execute-remote-ansible-success",
+              "activities": [
+                {
+                  "call_operation": ""
+                }
+              ]
+            }
+          },
+          "inputs": {
+            "endpoint-selector": {
+              "required": true,
+              "type": "string"
+            },
+            "job-template-name": {
+              "required": true,
+              "type": "string"
+            },
+            "limit": {
+              "required": false,
+              "type": "string"
+            },
+            "inventory": {
+              "required": false,
+              "type": "string"
+            },
+            "tags": {
+              "required": false,
+              "type": "string"
+            },
+            "skip-tags": {
+              "required": false,
+              "type": "string"
+            },
+            "extra-vars" : {
+              "required" : false,
+              "type" : "json"
+            }
+          },
+          "outputs": {
+            "ansible-command-status": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "execute-remote-ansible-success",
+                  "ansible-command-status"
+                ]
+              }
+            },
+            "ansible-command-logs": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "execute-remote-ansible-success",
+                  "ansible-command-logs"
+                ]
+              }
+            }
+          }
+        },
+        "connection-fail": {
+          "steps": {
+            "process": {
+              "description": "Execute Remote Ansible Script",
+              "target": "connection-fail",
+              "activities": [
+                {
+                  "call_operation": ""
+                }
+              ]
+            }
+          },
+          "inputs": {
+            "endpoint-selector": {
+              "required": true,
+              "type": "string"
+            },
+            "job-template-name": {
+              "required": true,
+              "type": "string"
+            },
+            "limit": {
+              "required": false,
+              "type": "string"
+            },
+            "inventory": {
+              "required": false,
+              "type": "string"
+            },
+            "tags": {
+              "required": false,
+              "type": "string"
+            },
+            "skip-tags": {
+              "required": false,
+              "type": "string"
+            },
+            "extra-vars" : {
+              "required" : false,
+              "type" : "json"
+            }
+          },
+          "outputs": {
+            "ansible-command-status": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "connection-fail",
+                  "ansible-command-status"
+                ]
+              }
+            },
+            "ansible-command-logs": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "connection-fail",
+                  "ansible-command-logs"
+                ]
+              }
+            }
+          }
+        },
+        "execute-remote-ansible-failure": {
+          "steps": {
+            "process": {
+              "description": "Execute Remote Ansible Script",
+              "target": "execute-remote-ansible-failure",
+              "activities": [
+                {
+                  "call_operation": ""
+                }
+              ]
+            }
+          },
+          "inputs": {
+            "endpoint-selector": {
+              "required": true,
+              "type": "string"
+            },
+            "job-template-name": {
+              "required": true,
+              "type": "string"
+            },
+            "limit": {
+              "required": false,
+              "type": "string"
+            },
+            "inventory": {
+              "required": false,
+              "type": "string"
+            },
+            "tags": {
+              "required": false,
+              "type": "string"
+            },
+            "skip-tags": {
+              "required": false,
+              "type": "string"
+            },
+            "extra-vars" : {
+              "required" : false,
+              "type" : "json"
+            }
+          },
+          "outputs": {
+            "ansible-command-status": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "execute-remote-ansible-failure",
+                  "ansible-command-status"
+                ]
+              }
+            },
+            "ansible-command-logs": {
+              "type": "string",
+              "value": {
+                "get_attribute": [
+                  "execute-remote-ansible-failure",
+                  "ansible-command-logs"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "node_templates": {
+        "execute-remote-ansible-success": {
+          "type": "component-remote-ansible-executor",
+          "interfaces": {
+            "ComponentRemoteAnsibleExecutor": {
+              "operations": {
+                "process": {
+                  "inputs": {
+                    "endpoint-selector" : "*ansible-remote-success-endpoint",
+                    "job-template-name": { "get_input": "job-template-name" },
+                    "limit": { "get_input": "limit" },
+                    "inventory": { "get_input": "inventory" },
+                    "extra-vars": { "get_input": "extra-vars" },
+                    "tags": { "get_input": "tags" },
+                    "skip-tags": { "get_input": "skip-tags" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "connection-fail": {
+          "type": "component-remote-ansible-executor",
+          "interfaces": {
+            "ComponentRemoteAnsibleExecutor": {
+              "operations": {
+                "process": {
+                  "inputs": {
+                    "endpoint-selector" : "*ansible-remote-invalid-endpoint",
+                    "job-template-name": { "get_input": "job-template-name" },
+                    "limit": { "get_input": "limit" },
+                    "inventory": { "get_input": "inventory" },
+                    "extra-vars": { "get_input": "extra-vars" },
+                    "tags": { "get_input": "tags" },
+                    "skip-tags": { "get_input": "skip-tags" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "execute-remote-ansible-failure": {
+          "type": "component-remote-ansible-executor",
+          "interfaces": {
+            "ComponentRemoteAnsibleExecutor": {
+              "operations": {
+                "process": {
+                  "inputs": {
+                    "endpoint-selector" : "*ansible-remote-failure-endpoint",
+                    "job-template-name": { "get_input": "job-template-name" },
+                    "limit": { "get_input": "limit" },
+                    "inventory": { "get_input": "inventory" },
+                    "extra-vars": { "get_input": "extra-vars" },
+                    "tags": { "get_input": "tags" },
+                    "skip-tags": { "get_input": "skip-tags" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

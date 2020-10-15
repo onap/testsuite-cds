@@ -1,0 +1,32 @@
+{
+  "name": "RT-rest-patch",
+  "data_type": "string",
+  "description": "Rest PATCH request for regression test",
+  "tags": "RT-rest-patch",
+  "updatedBy": "Selfish",
+  "definition": {
+	  "name" : "RT-rest-patch",
+	  "tags" : "RT-rest-patch",
+	  "updated-by" : "Selffish",
+	  "property" : {
+	    "description" : "Rest PATCH request for regression test",
+	    "type" : "string"
+	  },
+	  "sources" : {
+	    "sdnc" : {
+	      "type": "source-rest",
+	      "properties": {
+	        "type": "string",
+	        "verb": "PATCH",
+	        "url-path": "/patch",
+	        "endpoint-selector": "rest-endpoint",
+	        "path": "",
+	        "input-key-mapping": {},
+	        "output-key-mapping": {
+	          "value": "value"
+	        }
+	      }
+	    }
+	  }
+  }
+}
