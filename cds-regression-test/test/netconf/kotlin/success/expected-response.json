@@ -1,0 +1,29 @@
+{
+  "commonHeader": {
+    "timestamp": "2020-02-03T13:40:43.697Z",
+    "originatorId": "System",
+    "requestId": "regression-test-netconf-kotlin",
+    "subRequestId": "1",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-netconf",
+    "blueprintVersion": "1.0.0",
+    "actionName": "netconf-kotlin",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 200,
+    "eventType": "EVENT_COMPONENT_EXECUTED",
+    "timestamp": "2020-02-03T13:40:51.835Z",
+    "errorMessage": null,
+    "message": "success"
+  },
+  "payload": {
+    "netconf-kotlin-response": {
+      "response-data": {
+        "deploySuccess": true
+      }
+    }
+  }
+}

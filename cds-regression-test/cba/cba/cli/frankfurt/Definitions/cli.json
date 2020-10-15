@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "template_author": "Selffish",
+    "author-email": "test@bell.ca",
+    "template_name": "RT-cli",
+    "template_version": "1.0.0",
+    "template_tags": "test, regression"
+  },
+  "dsl_definitions": {
+    "device-properties": {
+      "type": "basic-auth",
+      "host": {
+        "get_input": "host"
+      },
+      "username": {
+        "get_input": "username"
+      },
+      "password": {
+        "get_input": "password"
+      },
+      "port": {
+        "get_input": "port"
+      },
+      "logging": {
+        "get_input": "logging"
+      },
+      "connectionTimeOut": {
+        "get_input": "connectionTimeOut"
+      }
+    }
+  },
+  "topology_template": {
+    "workflows": {
+      "cli": {
+        "steps": {
+          "cli": {
+            "description": "CLI Workflow",
+            "target": "cli"
+          }
+        },
+        "inputs": {
+          "resolution-key": {
+            "required": false,
+            "type": "string"
+          },
+          "password": {
+            "required": true,
+            "type": "string"
+          },
+          "username": {
+            "required": true,
+            "type": "string"
+          },
+          "host": {
+            "required": true,
+            "type": "string"
+          },
+          "port": {
+            "required": false,
+            "type": "string"
+          },
+          "connectionTimeOut": {
+            "required": true,
+            "type": "string"
+          },
+          "logging": {
+            "required": true,
+            "type": "boolean"
+          },
+          "commands": {
+            "required": true,
+            "type": "list",
+            "entry_schema": {
+              "type": "string"
+            }
+          }
+        },
+        "outputs": {
+          "response-data": {
+            "type": "string",
+            "value": {
+              "get_attribute": [
+                "cli",
+                "response-data"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "node_templates": {
+      "cli": {
+        "type": "component-script-executor",
+        "interfaces": {
+          "ComponentScriptExecutor": {
+            "operations": {
+              "process": {
+                "implementation": {
+                  "primary": "component-script"
+                },
+                "inputs": {
+                  "script-type": "kotlin",
+                  "script-class-reference": "cli.CliRegressionTest"
+                },
+                "outputs": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

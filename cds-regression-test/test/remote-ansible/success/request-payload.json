@@ -1,0 +1,27 @@
+{
+  "commonHeader": {
+    "originatorId": "System",
+    "requestId": "remote-ansible-success",
+    "subRequestId": "remote-ansible-success-1"
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-remote-ansible",
+    "blueprintVersion": "1.0.0",
+    "actionName": "execute-remote-ansible-success",
+    "mode": "sync"
+  },
+  "payload": {
+    "execute-remote-ansible-success-request": {
+      "endpoint-selector": "awx",
+      "job-template-name": "hello_world_job_template",
+      "inventory": "Demo Inventory",
+      "limit": "123",
+      "tags": "some-tag",
+      "skip-tags": "some-skip-tag",
+      "extra-vars": {
+        "site_id": "3 - Belmont",
+        "tor_group": "vEPC"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "actionIdentifiers": {
+    "mode": "sync",
+    "blueprintName": "RT-netconf",
+    "blueprintVersion": "1.0.0",
+    "actionName": "netconf-jython"
+  },
+  "payload": {
+    "netconf-jython-request": {
+      "netconf-host": "odl-netconf-testtool",
+      "netconf-timeout": 30
+    }
+  },
+  "commonHeader": {
+    "subRequestId": "1",
+    "requestId": "regression-test-netconf-jython",
+    "originatorId": "System"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "correlationUUID": "9acac95d-9b17-4224-9fe1-0cdb652d027c",
+  "commonHeader": {
+    "timestamp": "2020-07-02T22:52:50.662Z",
+    "originatorId": "System",
+    "requestId": "remote-python-request",
+    "subRequestId": "1",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-remote-python",
+    "blueprintVersion": "1.0.0",
+    "actionName": "remote-python",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 200,
+    "eventType": "EVENT_COMPONENT_EXECUTED",
+    "timestamp": "2020-07-02T22:53:05.357Z",
+    "errorMessage": null,
+    "message": "success"
+  },
+  "payload": {
+    "remote-python-response": {
+      "execute-command-payload": {
+        "abc": [
+          "xyz",
+          "qqq"
+        ]
+      },
+      "execute-command-logs": [
+        "remote executor regression"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "commonHeader": {
+    "timestamp": "2020-02-11T21:19:57.762Z",
+    "originatorId": "System",
+    "requestId": "regression-test-cli",
+    "subRequestId": "1",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-cli",
+    "blueprintVersion": "1.0.0",
+    "actionName": "cli",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 200,
+    "eventType": "EVENT_COMPONENT_EXECUTED",
+    "timestamp": "2020-02-11T21:20:00.446Z",
+    "errorMessage": null,
+    "message": "success"
+  },
+  "payload": {
+    "cli-response": {
+      "response-data": "\nCommand : pwd\n/\n\nCommand : ls\nbin\ndev\netc\nlib\n"
+    }
+  }
+}
