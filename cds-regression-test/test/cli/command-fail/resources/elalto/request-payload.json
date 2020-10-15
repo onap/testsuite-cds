@@ -1,0 +1,23 @@
+{
+	"actionIdentifiers": {
+        "mode": "sync",
+        "blueprintName": "RT-cli",
+        "blueprintVersion": "1.0.0",
+        "actionName": "cli"
+    },
+    "payload": {
+		"cli-request": {
+          "host": "cds-regression-sshmock",
+          "username": "cdstest",
+          "password": "testcds",
+          "port": "22",
+          "connectionTimeOut": "5000",
+          "commands": ["nonExistCommand"]
+        }
+    },
+    "commonHeader": {
+        "subRequestId": "1",
+        "requestId": "regression-test-cli-command-fail",
+        "originatorId": "System"
+    }
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "name": "v_default",
+    "input-param": true,
+    "property": {
+      "type": "string",
+      "default": "ok"
+    },
+    "dictionary-name": "input-source",
+    "dictionary-source": "input",
+    "dependencies": []
+  },
+  {
+    "name": "v_input",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "input-source",
+    "dictionary-source": "input",
+    "dependencies": []
+  },
+  {
+      "name": "v_python",
+      "input-param": true,
+      "property": {
+        "type": "string"
+      },
+      "dictionary-name": "properties-capability-source",
+      "dictionary-source": "capability",
+      "dependencies": []
+  },
+  {
+      "name": "v_kotlin",
+      "input-param": true,
+      "property": {
+        "type": "string"
+      },
+      "dictionary-name": "kotlin-script",
+      "dictionary-source": "capability",
+      "dependencies": []
+  },
+  {
+  "name": "v_db",
+  "input-param": true,
+  "property": {
+    "type": "list",
+    "entry_schema":{
+      "type":"string"
+    }
+  },
+  "dictionary-name": "RT-db",
+  "dictionary-source": "processor-db"
+  },
+  {
+   "name": "v_get",
+   "input-param": true,
+   "property": {
+     "type": "string"
+   },
+   "dictionary-name": "RT-rest-get",
+   "dictionary-source": "sdnc",
+   "dependencies": []
+ },
+ {
+  "name": "v_post",
+  "input-param": true,
+  "property": {
+    "type": "string"
+  },
+  "dictionary-name": "RT-rest-post",
+  "dictionary-source": "sdnc",
+  "dependencies": []
+ },
+ {
+  "name": "v_put",
+  "input-param": true,
+  "property": {
+    "type": "string"
+  },
+  "dictionary-name": "RT-rest-put",
+  "dictionary-source": "sdnc",
+  "dependencies": []
+ },
+ {
+  "name": "v_patch",
+  "input-param": true,
+  "property": {
+    "type": "string"
+  },
+  "dictionary-name": "RT-rest-patch",
+  "dictionary-source": "sdnc",
+  "dependencies": []
+ },
+ {
+  "name": "v_del",
+  "input-param": true,
+  "property": {
+    "type": "string"
+  },
+  "dictionary-name": "RT-rest-delete",
+  "dictionary-source": "sdnc",
+  "dependencies": []
+ }
+]

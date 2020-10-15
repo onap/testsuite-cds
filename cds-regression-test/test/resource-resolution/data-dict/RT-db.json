@@ -1,0 +1,30 @@
+{
+  "name": "RT-db",
+  "data_type": "string",
+  "description": "DB request for regression test",
+  "tags": "datetime",
+  "updatedBy": "Selfish",
+  "definition": {
+	  "name" : "RT-db",
+	  "tags" : "RT-db",
+	  "updated-by" : "Selffish",
+	  "property" : {
+	    "description" : "DB request for regression test",
+	    "type" : "string"
+	  },
+	  "sources" : {
+	    "processor-db" : {
+	      "type" : "source-db",
+	      "properties" : {
+          "endpoint-selector": "db-endpoint",
+	        "type" : "SQL",
+	        "query" : "select sdnctl.RESOURCE_RESOLUTION.value from sdnctl.RESOURCE_RESOLUTION where value='ok'",
+	        "input-key-mapping": {},
+	        "output-key-mapping" : {
+	          "value" : "value"
+	        }
+	      }
+	    }
+	  }
+	}
+}
