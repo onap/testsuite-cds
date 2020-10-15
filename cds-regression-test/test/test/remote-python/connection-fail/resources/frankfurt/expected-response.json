@@ -1,0 +1,29 @@
+{
+  "correlationUUID": null,
+  "commonHeader": {
+    "timestamp": "2020-06-09T21:02:52.783Z",
+    "originatorId": "System",
+    "requestId": "remote-python-connection-fail",
+    "subRequestId": "1",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-remote-python",
+    "blueprintVersion": "1.0.0",
+    "actionName": "connection-fail",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 500,
+    "eventType": "EVENT_COMPONENT_FAILURE",
+    "timestamp": "2020-06-09T21:02:53.142Z",
+    "errorMessage": "FAILURE : prepare-env : Command failed during env. preparation... timeout(120) requestId (remote-python-connection-fail). grpcError: (finishConnect(..) failed: Connection refused: /127.0.0.1:4242)",
+    "message": "failure"
+  },
+  "payload": {
+    "connection-fail-response": {
+      "execute-command-logs": "[]",
+      "execute-command-payload": "{}"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cds-regression-sshmock
+  labels:
+    app: cds-regression-sshmock
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cds-regression-sshmock
+  template:
+    metadata:
+      labels:
+        app: cds-regression-sshmock
+    spec:
+      containers:
+      - name: cds-regression-sshmock
+        image: registry-public.nso.lab-services.ca/cds-regression-sshmock:1.0.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 22

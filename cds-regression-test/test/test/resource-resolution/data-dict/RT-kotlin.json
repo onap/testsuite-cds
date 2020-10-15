@@ -1,0 +1,26 @@
+{
+  "name": "kotlin-script",
+  "data_type": "string",
+  "description": "Kotlin script used to read properties.",
+  "tags": "kotlin-script",
+  "updatedBy": "Self-fish",
+  "definition": {
+    "name": "kotlin-script",
+    "updated-by": "Selffish",
+    "tags": "properties-capability-source",
+    "property": {
+      "description": "Kotlin script used to read properties.",
+      "type": "string"
+    },
+    "sources": {
+      "capability": {
+        "type": "source-capability",
+        "properties": {
+          "script-type": "kotlin",
+          "script-class-reference": "cba.cds.RT.ResolvPropertiesKt",
+          "instance-dependencies": []
+        }
+      }
+    }
+  }
+}
