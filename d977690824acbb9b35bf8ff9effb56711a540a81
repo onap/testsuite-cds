@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b68ee1f_ecce2de5",
+        "filename": "cds-regression-test/init-mockserver-job.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5097
+      },
+      "writtenOn": "2020-10-16T09:18:54Z",
+      "side": 1,
+      "message": "This image is not publicly available:\n\n$ docker pull registry-dev.nso.lab-services.ca/nso-platform-onap-cds-regression-image:latest\nError response from daemon: Get https://registry-dev.nso.lab-services.ca/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)\n\n\n$ ping registry-dev.nso.lab-services.ca\nPING nso-proxy.nso.lab-services.ca (204.101.2.21) 56(84) bytes of data.\n^C\n--- nso-proxy.nso.lab-services.ca ping statistics ---\n25 packets transmitted, 0 received, 100% packet loss, time 24567ms\n\nIn that case it should be either hosted on dockerhub or dockerfile should be provided and configuration changed to leverage on it.",
+      "range": {
+        "startLine": 20,
+        "startChar": 15,
+        "endLine": 20,
+        "endChar": 93
+      },
+      "revId": "d977690824acbb9b35bf8ff9effb56711a540a81",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
