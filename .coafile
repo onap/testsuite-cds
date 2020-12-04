@@ -9,7 +9,12 @@ bears = JSONFormatBear
 json_sort = False
 indent_size = 2
 ignore =
-  .tox/**
+  .tox/**,
+  # this file does not contain parsable JSON. Invalid control character at.
+  cds-regression-test/test/ansible-python-dg/mock-payloads/job-output.json,
+  cds-regression-test/test/remote-ansible/mock-payloads/job-output.json,
+  cds-regression-test/test/test/ansible-python-dg/mock-payloads/job-output.json,
+  cds-regression-test/test/test/remote-ansible/mock-payloads/job-output.json
 
 [py]
 bears = PyLintBear

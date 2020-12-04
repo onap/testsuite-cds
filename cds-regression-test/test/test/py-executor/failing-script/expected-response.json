@@ -1,0 +1,25 @@
+{
+  "commonHeader": {
+    "timestamp": "2020-05-19T17:24:33.353Z",
+    "originatorId": "System",
+    "requestId": "123456",
+    "subRequestId": "1234-12234",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-py-executor",
+    "blueprintVersion": "1.0.0",
+    "actionName": "failing-remote-python",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 500,
+    "eventType": "EVENT_COMPONENT_FAILURE",
+    "timestamp": "2020-05-19T17:24:33.370Z",
+    "errorMessage": "Failed in ComponentRemoteScriptExecutor : UNKNOWN: Exception iterating responses: Script raised an exception, failed to get execution property(node_templates/execute-failing-remote-python/attributes/status)",
+    "message": "failure"
+  },
+  "payload": {
+    "failing-remote-python-response": {}
+  }
+}

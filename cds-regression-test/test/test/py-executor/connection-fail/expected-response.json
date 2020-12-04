@@ -1,0 +1,25 @@
+{
+  "commonHeader": {
+    "timestamp": "2020-05-19T17:26:02.923Z",
+    "originatorId": "System",
+    "requestId": "123456",
+    "subRequestId": "1234-12234",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-py-executor",
+    "blueprintVersion": "1.0.0",
+    "actionName": "connection-fail",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 500,
+    "eventType": "EVENT_COMPONENT_FAILURE",
+    "timestamp": "2020-05-19T17:26:02.926Z",
+    "errorMessage": "Failed in ComponentRemoteScriptExecutor : UNAVAILABLE: io exception, failed to get execution property(node_templates/execute-connection-fail/attributes/status)",
+    "message": "failure"
+  },
+  "payload": {
+    "connection-fail-response": {}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "commonHeader": {
+    "originatorId": "System",
+    "requestId": "remote-python-connection-fail",
+    "subRequestId": "1"
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-remote-python",
+    "blueprintVersion": "1.0.0",
+    "actionName": "connection-fail",
+    "mode": "sync"
+  },
+  "payload": {
+    "connection-fail-request": {}
+  }
+}
