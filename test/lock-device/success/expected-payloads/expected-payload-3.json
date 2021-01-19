@@ -1,0 +1,28 @@
+{
+    "correlationUUID": "846b5cf8-c914-4bb4-abd9-5aae49fce8bd",
+    "commonHeader": {
+        "timestamp": "2020-10-21T14:35:29.222Z",
+        "originatorId": "System",
+        "requestId": "lock-request-3",
+        "subRequestId": "1",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-lock-device",
+        "blueprintVersion": "1.0.0",
+        "actionName": "resolve-deploy-kotlin",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 200,
+        "eventType": "EVENT_COMPONENT_EXECUTED",
+        "timestamp": "2020-10-21T14:35:59.688Z",
+        "errorMessage": null,
+        "message": "success"
+    },
+    "payload": {
+        "resolve-deploy-kotlin-response": {
+            "response-data": "Success: lock-request-3"
+        }
+    }
+}

@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "template_author": "Selffish",
+    "author-email": "test@bell.ca",
+    "template_name": "RT-py-executor",
+    "template_version": "1.0.0",
+    "template_tags": "Bell, CBA, test"
+  },
+  "dsl_definitions": {
+    "py-executor": {
+      "type": "tls-auth",
+      "host": .PY_EXEC_SVC,
+      "port": "50052",
+      "trustCertCollection": "/opt/app/onap/config/certs/py-executor/py-executor-chain.pem"
+    },
+    "invalid-py-executor": {
+      "type": "tls-auth",
+      "host": "127.0.0.1",
+      "port": "12345",
+      "trustCertCollection": "/opt/app/onap/config/certs/py-executor/py-executor-chain.pem"
+    },
+    "parameters": {
+      "hello" : "world"
+    }
+  },
+  "topology_template": {
+    "workflows": {
+      "remote-python": {
+        "steps": {
+          "execute-script": {
+            "description": "Execute Remote Python Script",
+            "target": "execute-remote-python"
+          }
+        },
+        "inputs": {},
+        "outputs": {
+          "status": {
+            "type": "string",
+            "value": {
+              "get_attribute": [
+                "execute-remote-python",
+                "status"
+              ]
+            }
+          },
+          "response-data": {
+            "type": "json",
+            "value": {
+              "get_attribute": [
+                "execute-remote-python",
+                "response-data"
+              ]
+            }
+          }
+        }
+      },
+      "connection-fail": {
+        "steps": {
+          "execute-script": {
+            "description": "Execute Remote Python Script to an invalid endpoint",
+            "target": "execute-connection-fail"
+          }
+        },
+        "inputs": {},
+        "outputs": {
+          "status": {
+            "type": "string",
+            "value": {
+              "get_attribute": [
+                "execute-connection-fail",
+                "status"
+              ]
+            }
+          },
+          "response-data": {
+            "type": "json",
+            "value": {
+              "get_attribute": [
+                "execute-connection-fail",
+                "response-data"
+              ]
+            }
+          }
+        }
+      },
+      "failing-remote-python": {
+        "steps": {
+          "execute-script": {
+            "description": "Execute Remote Python Script",
+            "target": "execute-failing-remote-python"
+          }
+        },
+        "inputs": {},
+        "outputs": {
+          "status": {
+            "type": "string",
+            "value": {
+              "get_attribute": [
+                "execute-failing-remote-python",
+                "status"
+              ]
+            }
+          },
+          "response-data": {
+            "type": "json",
+            "value": {
+              "get_attribute": [
+                "execute-failing-remote-python",
+                "response-data"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "node_templates": {
+      "execute-remote-python": {
+        "type": "component-remote-script-executor",
+        "interfaces": {
+          "ComponentRemoteScriptExecutor": {
+            "operations": {
+              "process": {
+                "inputs": {
+                  "selector": "*py-executor",
+                  "blueprint-name": "RT-py-executor",
+                  "blueprint-version": "1.0.0",
+                  "blueprint-action": "HelloWorld",
+                  "timeout": 1000,
+                  "request-data": "*parameters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "execute-connection-fail": {
+        "type": "component-remote-script-executor",
+        "interfaces": {
+          "ComponentRemoteScriptExecutor": {
+            "operations": {
+              "process": {
+                "inputs": {
+                  "selector": "*invalid-py-executor",
+                  "blueprint-name": "RT-py-executor",
+                  "blueprint-version": "1.0.0",
+                  "blueprint-action": "HelloWorld",
+                  "timeout": 1000
+                }
+              }
+            }
+          }
+        }
+      },
+      "execute-failing-remote-python": {
+        "type": "component-remote-script-executor",
+        "interfaces": {
+          "ComponentRemoteScriptExecutor": {
+            "operations": {
+              "process": {
+                "inputs": {
+                  "selector": "*py-executor",
+                  "blueprint-name": "RT-py-executor",
+                  "blueprint-version": "1.0.0",
+                  "blueprint-action": "FailingScript",
+                  "timeout": 1000
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

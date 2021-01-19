@@ -1,0 +1,30 @@
+{
+    "correlationUUID": null,
+    "commonHeader": {
+        "timestamp": "2020-05-26T01:11:00.914Z",
+        "originatorId": "System",
+        "requestId": "ansible-python-dg-success",
+        "subRequestId": "ansible-python-dg-success-1",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-ansible-python-dg",
+        "blueprintVersion": "1.0.0",
+        "actionName": "run-dg",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 200,
+        "eventType": "EVENT_COMPONENT_EXECUTED",
+        "timestamp": "2020-05-26T01:11:17.384Z",
+        "errorMessage": null,
+        "message": "success"
+    },
+    "payload": {
+        "run-dg-response": {
+            "execute-command-logs": [
+                "TenGigE0/0/0/19"
+            ]
+        }
+    }
+}

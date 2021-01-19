@@ -1,0 +1,45 @@
+{
+    "correlationUUID": "d70b019f-7b05-4830-8707-8eea2cba707c",
+    "commonHeader": {
+        "timestamp": "2020-12-15T18:13:16.780Z",
+        "originatorId": "System",
+        "requestId": "retrieve-resolution-resolve",
+        "subRequestId": "resolve-001",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-retrieve-resolution",
+        "blueprintVersion": "1.0.0",
+        "actionName": "retrieve-resolution",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 200,
+        "eventType": "EVENT_COMPONENT_EXECUTED",
+        "timestamp": "2020-12-15T18:13:18.814Z",
+        "errorMessage": null,
+        "message": "success"
+    },
+    "payload": {
+        "retrieve-resolution-response": {
+            "retrieved-values": {
+                "resolved-template": {
+                    "input": "ok",
+                    "kotlin1": "val1",
+                    "kotlin2": "val2",
+                    "kotlin3": "val3",
+                    "kotlin4": "val4"
+                },
+                "retrieved-resolution": [
+                    [
+                        "ok",
+                        "val1",
+                        "val2",
+                        "val3",
+                        "val4"
+                    ]
+                ]
+            }
+        }
+    }
+}
