@@ -1,8 +1,0 @@
-TOSCA-Meta-File-Version: 1.0.0
-CSAR-Version: 1.0
-Created-By: Selffish
-Entry-Definitions: Definitions/remote-ansible.json
-Template-Tags: test, regression
-Template-Name: RT-remote-ansible
-Template-Version: 1.0.0
-Template-Type: DEFAULT

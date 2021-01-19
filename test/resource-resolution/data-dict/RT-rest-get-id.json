@@ -1,0 +1,34 @@
+{
+  "name": "RT-rest-get-id",
+  "data_type": "string",
+  "description": "Rest GET request using input key mapping",
+  "tags": "RT-rest-get-id",
+  "updatedBy": "Selfish",
+  "definition": {
+	  "name" : "RT-rest-get-id",
+	  "tags" : "RT-rest-get-id",
+	  "updated-by" : "Selffish",
+	  "property" : {
+	    "description" : "Rest GET request using input key mapping",
+	    "type" : "string"
+	  },
+	  "sources" : {
+	    "sdnc" : {
+	      "type": "source-rest",
+	      "properties": {
+	        "type": "string",
+	        "verb": "GET",
+	        "url-path": "/get/$id/id",
+	        "endpoint-selector": "rest-endpoint",
+	        "path": "",
+	        "input-key-mapping": {
+				"id": "j_get"
+			},
+	        "output-key-mapping": {
+				"value": "value"
+			}
+	      }
+	    }
+	  }
+  }
+}

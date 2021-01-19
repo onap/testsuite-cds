@@ -1,0 +1,24 @@
+{
+  "httpRequest" : {
+    "method" : "GET",
+    "path" : .PATH_JOB_OUTPUT_PAYLOAD
+  },
+  "httpResponse" : {
+    "body" : "
+
+    PLAY [Hello World Sample] ******************************************************
+
+    TASK [Gathering Facts] *********************************************************
+    ok: [localhost]
+
+    TASK [Hello Message] ***********************************************************
+    ok: [localhost] => {
+        \"msg\": \"Hello World!\"
+    }
+
+    PLAY RECAP *********************************************************************
+    localhost                  : ok=2    changed=0    unreachable=0    failed=0
+
+"
+  }
+}

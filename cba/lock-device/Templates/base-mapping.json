@@ -1,0 +1,23 @@
+[
+    {
+        "name": "vnf-id",
+        "input-param": true,
+        "property": {
+            "type": "string",
+            "default": "rt-vnf-xyz-123"
+        },
+        "dictionary-name": "input-source",
+        "dictionary-source": "default",
+        "dependencies": []
+    },
+    {
+        "name": "lock-acquire-timeout",
+        "input-param": true,
+        "property": {
+            "type": "integer"
+        },
+        "dictionary-name": "input-source",
+        "dictionary-source": "input",
+        "dependencies": []
+    }
+]
