@@ -1,0 +1,31 @@
+{
+  "correlationUUID": null,
+  "commonHeader": {
+    "timestamp": "2020-05-07T22:18:06.901Z",
+    "originatorId": "System",
+    "requestId": "RR-success-1",
+    "subRequestId": "1234-12234",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-resource-resolution",
+    "blueprintVersion": "1.0.0",
+    "actionName": "resource-resolution",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 200,
+    "eventType": "EVENT_COMPONENT_EXECUTED",
+    "timestamp": "2020-05-07T22:18:22.289Z",
+    "errorMessage": null,
+    "message": "success"
+  },
+  "payload": {
+    "resource-resolution-response": {
+      "meshed-template": {
+        "helloworld-velocity": "{\n  \"default\": \"ok\",\n  \"input\": \"ok\",\n  \"script\": {\n    \"python\": \"ok\",\n    \"kotlin\": \"ok\"\n  },\n  \"db\": \"ok\",\n  \"rest\": {\n    \"GET\": \"A046E51D-44DC-43AE-BBA2-86FCA86C5265\",\n    \"POST\": \"post:ok\",\n    \"PUT\": \"put:ok\",\n    \"PATCH\": \"patch:ok\",\n    \"DELETE\": \"delete:ok\"\n  }\n}\n",
+        "helloworld-jinja": "{\n  \"default\": \"ok\",\n  \"input\": \"ok\",\n  \"script\": {\n    \"python\": \"ok\",\n    \"kotlin\": {\n      \"base\": \"ok\"\n      \"from suspend function\": \"ok\"\n    }\n  },\n  \"db\": \"ok\",\n  \"rest\": {\n    \"GET\": \"A046E51D-44DC-43AE-BBA2-86FCA86C5265\",\n    \"GET_ID\": \"74FE67C6-50F5-4557-B717-030D79903908\",\n    \"POST\": \"post:ok\",\n    \"PUT\": \"put:ok\",\n    \"PATCH\": \"patch:ok\",\n    \"DELETE\": \"delete:ok\"\n  }\n}\n"
+      }
+    }
+  }
+}

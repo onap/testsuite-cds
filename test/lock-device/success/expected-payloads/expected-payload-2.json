@@ -1,0 +1,26 @@
+{
+  "correlationUUID": "699706a7-380b-464b-8c84-6eb7c356099a",
+  "commonHeader": {
+    "timestamp": "2020-10-21T14:34:29.157Z",
+    "originatorId": "System",
+    "requestId": "lock-request-2",
+    "subRequestId": "1",
+    "flags": null
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-lock-device",
+    "blueprintVersion": "1.0.0",
+    "actionName": "resolve-deploy-kotlin",
+    "mode": "sync"
+  },
+  "status": {
+    "code": 500,
+    "eventType": "EVENT_COMPONENT_FAILURE",
+    "timestamp": "2020-10-21T14:34:40.817Z",
+    "errorMessage": "Failed in ComponentScriptExecutor : Failed to acquire lock within timeout, failed to get execution property(node_templates/execute-kotlin/attributes/response-data)",
+    "message": "failure"
+  },
+  "payload": {
+    "resolve-deploy-kotlin-response": {}
+  }
+}

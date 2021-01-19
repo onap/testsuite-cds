@@ -1,0 +1,26 @@
+{
+  "commonHeader": {
+    "originatorId": "System",
+    "requestId": "RR-success-1",
+    "subRequestId": "1234-12234"
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-resource-resolution",
+    "blueprintVersion": "1.0.0",
+    "actionName": "resource-resolution",
+    "mode": "sync"
+  },
+  "payload": {
+    "resource-resolution-request": {
+      "template-prefix": [
+        "helloworld-velocity",
+        "helloworld-jinja"
+      ],
+      "resolution-key": "regression-test",
+      "resource-resolution-properties": {
+        "v_input": "ok",
+        "j_input": "ok"
+      }
+    }
+  }
+}

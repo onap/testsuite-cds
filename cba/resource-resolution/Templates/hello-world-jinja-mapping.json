@@ -1,0 +1,127 @@
+[
+  {
+    "name": "j_default",
+    "input-param": true,
+    "property": {
+      "type": "string",
+      "default": "ok"
+    },
+    "dictionary-name": "input-source",
+    "dictionary-source": "input",
+    "dependencies": []
+  },
+  {
+    "name": "j_input",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "input-source",
+    "dictionary-source": "input",
+    "dependencies": []
+  },
+  {
+    "name": "j_python",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "properties-capability-source",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "j_kotlin",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "from_suspend_function",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "j_db",
+    "input-param": true,
+    "property": {
+      "type": "list",
+      "entry_schema": {
+        "type": "string"
+      }
+    },
+    "dictionary-name": "RT-db",
+    "dictionary-source": "processor-db"
+  },
+  {
+    "name": "j_get",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-get",
+    "dictionary-source": "sdnc",
+    "dependencies": []
+  },
+  {
+    "name": "j_get_id",
+    "input-param": false,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-get-id",
+    "dictionary-source": "sdnc",
+    "dependencies": [
+      "j_get"
+    ]
+  },
+  {
+    "name": "j_post",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-post",
+    "dictionary-source": "sdnc",
+    "dependencies": []
+  },
+  {
+    "name": "j_put",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-put",
+    "dictionary-source": "sdnc",
+    "dependencies": []
+  },
+  {
+    "name": "j_patch",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-patch",
+    "dictionary-source": "sdnc",
+    "dependencies": []
+  },
+  {
+    "name": "j_del",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "RT-rest-delete",
+    "dictionary-source": "sdnc",
+    "dependencies": []
+  }
+]

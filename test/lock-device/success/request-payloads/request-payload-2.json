@@ -1,0 +1,20 @@
+{
+  "actionIdentifiers": {
+    "mode": "sync",
+    "blueprintName": "RT-lock-device",
+    "blueprintVersion": "1.0.0",
+    "actionName": "resolve-deploy-kotlin"
+  },
+  "payload": {
+    "resolve-deploy-kotlin-request": {
+      "resolve-deploy-kotlin-properties": {
+        "lock-acquire-timeout": 10
+      }
+    }
+  },
+  "commonHeader": {
+    "subRequestId": "1",
+    "requestId": "lock-request-2",
+    "originatorId": "System"
+  }
+}
