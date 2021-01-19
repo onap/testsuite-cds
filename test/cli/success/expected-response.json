@@ -1,0 +1,38 @@
+{
+    "commonHeader": {
+        "timestamp": "2020-05-25T20:54:11.024Z",
+        "originatorId": "System",
+        "requestId": "regression-test-cli",
+        "subRequestId": "1",
+        "flags": null
+    },
+    "actionIdentifiers": {
+        "blueprintName": "RT-cli",
+        "blueprintVersion": "1.0.0",
+        "actionName": "cli",
+        "mode": "sync"
+    },
+    "status": {
+        "code": 200,
+        "eventType": "EVENT_COMPONENT_EXECUTED",
+        "timestamp": "2020-05-25T20:54:21.453Z",
+        "errorMessage": null,
+        "message": "success"
+    },
+    "payload": {
+        "cli-response": {
+            "response-data": [
+                {
+                    "command": "pwd",
+                    "deviceOutput": "pwd\r\n/ $ pwd\r\n/\r\n/ $ \u001b[6n",
+                    "successful": true
+                },
+                {
+                    "command": "ls",
+                    "deviceOutput": "pwd\r\n/ $ pwd\r\n/\r\n/ $ \u001b[6nls\r\n\u001b[1;34mbin\u001b[m  \u001b[1;34mdev\u001b[m  \u001b[1;34metc\u001b[m  \u001b[1;34mlib\u001b[m\r\n/ $ \u001b[6n",
+                    "successful": true
+                }
+            ]
+        }
+    }
+}

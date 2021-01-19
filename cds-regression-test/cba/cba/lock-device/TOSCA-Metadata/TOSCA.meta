@@ -1,8 +1,0 @@
-TOSCA-Meta-File-Version: 1.0.0
-CSAR-Version: 1.0
-Created-By: Selffish
-Entry-Definitions: Definitions/lock-device.json
-Template-Tags: test, regression
-Template-Name: RT-lock-device
-Template-Version: 1.0.0
-Template-Type: DEFAULT

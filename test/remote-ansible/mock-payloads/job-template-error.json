@@ -1,0 +1,8 @@
+{
+    "httpRequest": {
+        "path": .PATH_JT_ERR_PAYLOAD
+    },
+    "httpResponse": {
+        "statusCode": 500
+    }
+}
