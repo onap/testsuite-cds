@@ -1,0 +1,52 @@
+[
+  {
+    "name": "v_input",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "input-source",
+    "dictionary-source": "input",
+    "dependencies": []
+  },
+  {
+    "name": "v_kotlin1",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script-1",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "v_kotlin2",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script-2",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "v_kotlin3",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script-3",
+    "dictionary-source": "capability",
+    "dependencies": []
+  },
+  {
+    "name": "v_kotlin4",
+    "input-param": true,
+    "property": {
+      "type": "string"
+    },
+    "dictionary-name": "kotlin-script-4",
+    "dictionary-source": "capability",
+    "dependencies": []
+  }
+]

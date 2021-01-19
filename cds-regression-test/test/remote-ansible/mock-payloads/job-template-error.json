@@ -1,8 +1,0 @@
-{
-  "httpRequest": {
-    "path": "/remote-ansible/failure/api/v2/job_templates/hello_world_job_template/"
-  },
-  "httpResponse": {
-    "statusCode": 500
-  }
-}

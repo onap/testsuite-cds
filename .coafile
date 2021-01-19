@@ -11,10 +11,24 @@ indent_size = 2
 ignore =
   .tox/**,
   # this file does not contain parsable JSON. Invalid control character at.
-  cds-regression-test/test/ansible-python-dg/mock-payloads/job-output.json,
-  cds-regression-test/test/remote-ansible/mock-payloads/job-output.json,
-  cds-regression-test/test/test/ansible-python-dg/mock-payloads/job-output.json,
-  cds-regression-test/test/test/remote-ansible/mock-payloads/job-output.json
+  cba/ansible-python-dg/Definitions/ansible-python.json,
+  cba/py-executor/Definitions/py-executor.json,
+  cba/remote-ansible/Definitions/remote-ansible.json,
+  cba/remote-python/Definitions/remote-python.json,
+  cba/resource-resolution/Definitions/resource-resolution.json,
+  test/ansible-python-dg/mock-payloads/get_job-template-launch.json,
+  test/ansible-python-dg/mock-payloads/inventory.json,
+  test/ansible-python-dg/mock-payloads/job-execution.json,
+  test/ansible-python-dg/mock-payloads/job-output.json,
+  test/ansible-python-dg/mock-payloads/job-template.json,
+  test/ansible-python-dg/mock-payloads/post_job-template-launch.json,
+  test/remote-ansible/mock-payloads/get_job-template-launch.json,
+  test/remote-ansible/mock-payloads/inventory.json,
+  test/remote-ansible/mock-payloads/job-execution.json,
+  test/remote-ansible/mock-payloads/job-output.json,
+  test/remote-ansible/mock-payloads/job-template-error.json,
+  test/remote-ansible/mock-payloads/job-template.json,
+  test/remote-ansible/mock-payloads/post_job-template-launch.json
 
 [py]
 bears = PyLintBear

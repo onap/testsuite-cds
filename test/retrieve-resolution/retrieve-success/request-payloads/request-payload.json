@@ -1,0 +1,25 @@
+{
+  "commonHeader": {
+    "originatorId": "System",
+    "requestId": "retrieve-resolution-resolve",
+    "subRequestId": "resolve-001"
+  },
+  "actionIdentifiers": {
+    "blueprintName": "RT-retrieve-resolution",
+    "blueprintVersion": "1.0.0",
+    "actionName": "retrieve-resolution",
+    "mode": "sync"
+  },
+  "payload": {
+    "retrieve-resolution-request": {
+      "template-prefix": [
+        "helloworld-velocity"
+      ],
+      "resolution-key": "rt-retrieve-resolution",
+      "artifact-name": "helloworld-velocity",
+      "retrieve-resolution-properties": {
+        "v_input": "ok"
+      }
+    }
+  }
+}
